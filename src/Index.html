@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLW E-Sports Ignite</title>
+
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/style/main.css">
+  <link rel="stylesheet" href="./assets/style/form.css">
+</head>
+
+<body class="bodyDisable">
+  <section id="formSection" class=""></section>
+
+  <div id="formDiv" class="disabledd">
+    <section id="formContainer">
+      <h2 id="formTitle">Publique um anúncio</h2>
+
+      <form id="formulario">
+        <div class="colContainer">
+          <label for="gameSelect">Qual o game?</label>
+          <select name="gamesSelect" id="gameSelect">
+            <option value="">Selecione o game que deseja jogar</option>
+            <option value="Counter Strike">Counter Strike</option>
+            <option value="Rainbow Six Siege">Rainbow Six Siege</option>
+            <option value="Valorant">Valorant</option>
+            <option value="League of Legends">League of Legends</option>
+            <option value="GTA V">GTA V</option>
+            <option value="Fortnite">Fortnite</option>
+          </select>
+        </div>
+
+        <div class="colContainer">
+          <label for="gameNickname">Seu nome (ou nickname)</label>
+          <input type="text" placeholder="Como te chamam dentro do game" name="gameNickname" id="gameNickname">
+        </div>
+
+        <div class="rowContainer">
+          <div class="colContainer centerCol">
+            <label for="gameTime">Joga há quantos anos?</label>
+            <input type="text" id="gameTime" name="gameTime" placeholder="Tudo bem ser zero">
+          </div>
+
+          <div class="colContainer centerCol">
+            <label for="gameDiscord">Qual seu discord?</label>
+            <input type="text" id="gameDiscord" name="gameDiscord" placeholder="user#0000">
+          </div>
+        </div>
+
+        <div class="rowContainer teste">
+          <div class="colContainer">
+            <label for="gameDays">Quando costuma jogar?</label>
+            <div id="daysOfWeekContainer">
+              <span class="daysOfWeekForm" id="testeteste">S</span>
+              <span class="daysOfWeekForm">T</span>
+              <span class="daysOfWeekForm">Q</span>
+              <span class="daysOfWeekForm">Q</span>
+              <span class="daysOfWeekForm">S</span>
+            </div>
+          </div>
+
+          <div class="colContainer test">
+            <label for="">Qual horário do dia?</label>
+            <div id="hoursContainer">
+              <input type="text" placeholder="de" class="hoursPerDay" id="hoursPerDayFrom">
+              <input type="text" placeholder="até" class="hoursPerDay" id="hoursPerDayTo">
+            </div>
+          </div>
+        </div>
+
+        <div id="checkboxDiv">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox">Costumo me conectar ao chat de voz</label>
+        </div>
+
+      </form>
+
+      <div id="bottomForm">
+        <div class="btnForm" id="cancelBtn">Cancelar</div>
+
+        <div class="btnForm" id="submitBtn">
+          <img src="./assets/images/GameController.svg" alt="Controller">
+          Encontar duo
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <header>
+      <div id="logo_container">
+        <img src="./assets/images/Logo.png" alt="NLW Logo" id="nlwLogo">
+      </div>
+    </header>
+
+    <section id="mainSection">
+      <div>
+        <h1 id="pageTitle">Seu <span>duo</span> está aqui.</h1>
+      </div>
+
+      <div id="mainContent">
+        <div id="gameCards">
+          <a href="">
+            <img src="./assets/images/Games Images/Counter Strike.jpg" alt="Counter Strike" class="postGames">
+          </a>
+
+          <a href="">
+            <img src="./assets/images/Games Images/Rainbow Six Siege.jpg" alt="Rainbow Six Siege" class="postGames">
+          </a>
+
+          <a href="">
+            <img src="./assets/images/Games Images/Fortnite.jpg" alt="Fortnite" class="postGames">
+          </a>
+
+          <a href="">
+            <img src="./assets/images/Games Images/Valorant.jpg" alt="Valorant" class="postGames">
+          </a>
+
+          <a href="">
+            <img src="./assets/images/Games Images/GTA V.jpg" alt="GTA V" class="postGames">
+          </a>
+
+          <a href="">
+            <img src="./assets/images/Games Images/League of Legends.jpg" alt="League of Legends" class="postGames"
+              id="testeImageJs">
+          </a>
+        </div>
+
+        <div id="backContainer">
+          <div id="footerContainer">
+            <div>
+              <h2 id="footerTitle">Não encontrou seu duo?</h2>
+              <p>Publique um anúncio para encontrar novos players!</p>
+            </div>
+            <div id="footerButton">
+              <img src="./assets/images/MagnifyingGlassPlus.svg" alt="Find">
+              Publicar anúncio
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/app/app.js"></script>
+</body>
+
+</html>
