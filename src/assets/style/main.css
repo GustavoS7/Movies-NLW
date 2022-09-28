@@ -16,6 +16,8 @@ main {
   gap: 80px;
   margin-top: 80px;
   max-width: 1200px;
+  width: 1200px;
+  /* overflow-x: hidden; */
   z-index: 0;
 }
 
@@ -70,7 +72,7 @@ main {
 }
 
 .postGames:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #backContainer {
@@ -117,17 +119,22 @@ main {
 }
 
 #footerButton:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   cursor: pointer;
 }
 
-/* #gameCards:hover {
-  transform: scale(1.5);
-} */
+#gameCards {
+  position: relative;
+  overflow-x: auto;
+}
 
 #gameCards {
-  width: 1200px;
-  height: auto;
-  overflow-y: visible;
-  overflow-y: hidden;
+  box-sizing: content-box;
+  max-width: 1200px;
+  overflow-x: auto;
+  padding: 10px 5px;
+}
+
+#gameCards::-webkit-scrollbar {
+  display: none;
 }
