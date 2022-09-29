@@ -1,15 +1,19 @@
 const mainDiv = document.querySelector('#gameCards')
 
+var buildMovies = ''
+
 const buildSlider = (array) => {
-  for (let movies of array) {
-    let movie = `
-    <a href="https://image.tmdb.org/t/p/original${movies[14].poster_path}">
-      <img src"" alt="GTA V" class="postGames">
+  for (let movie of array) {
+    let movies = `
+    <a href="">
+      <img src="https://image.tmdb.org/t/p/original${movie.poster_path}" alt="GTA V" class="postGames">
     </a>
     `
 
-    mainDiv.appendChild(movie)
+    buildMovies += movies
   }
+  console.log(buildMovies)
+  return buildMovies
 }
 
 export { buildSlider }

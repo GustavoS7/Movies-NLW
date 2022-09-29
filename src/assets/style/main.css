@@ -124,17 +124,12 @@ main {
 }
 
 #gameCards {
-  position: relative;
-  overflow-x: auto;
-}
-
-#gameCards {
   box-sizing: content-box;
   max-width: 1200px;
-  overflow-x: auto;
+  overflow-y: hidden;
   padding: 10px 5px;
 }
 
-#gameCards::-webkit-scrollbar {
+/* #gameCards::-webkit-scrollbar {
   display: none;
-}
+} */

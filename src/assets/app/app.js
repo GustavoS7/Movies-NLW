@@ -1,10 +1,11 @@
 import { newData } from './api.js'
 import { buildSlider } from './buildSlider.js'
+const games = document.querySelector('#gameCards')
 
 setTimeout(() => {
   console.log(newData)
   buildSlider(newData)
-  testeJs.setAttribute('src', `https://image.tmdb.org/t/p/original${newData[14].poster_path}`)
+  games.innerHTML = buildSlider(newData)
 }, 200)
 
 
