@@ -4,7 +4,6 @@ const games = document.querySelector('#gameCards')
 
 setTimeout(() => {
   console.log(newData)
-  buildSlider(newData)
   games.innerHTML = buildSlider(newData)
 }, 200)
 
@@ -56,6 +55,3 @@ const cleanForm = function () {
   formulario.classList.toggle('disabledd')
   formularioBg.classList.toggle('enabled')
 }
-
-const testeJs = document.getElementById('testeImageJs')
-

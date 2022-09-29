@@ -61,7 +61,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .postGames {
@@ -125,11 +125,21 @@ main {
 
 #gameCards {
   box-sizing: content-box;
-  max-width: 1200px;
-  overflow-y: hidden;
+  max-width: 1100px;
+  overflow-y: scroll;
+  transform: translate(-3px);
   padding: 10px 5px;
 }
 
-/* #gameCards::-webkit-scrollbar {
-  display: none;
-} */
+#gameCards::-webkit-scrollbar {
+  height: 10px;
+  width: 10%;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+#gameCards::-webkit-scrollbar-thumb {
+  background-color: white;
+  width: 10px;
+  border-radius: 5px;
+}
