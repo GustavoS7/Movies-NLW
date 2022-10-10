@@ -143,3 +143,19 @@ main {
   width: 10px;
   border-radius: 5px;
 }
+
+
+/* Botões do Slider */
+
+/* #containerGamesCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnleftright {
+  color: white;
+  position: absolute;
+  top: 25%;
+  transform: translateX(50%);
+  z-index: 90;
+} */
