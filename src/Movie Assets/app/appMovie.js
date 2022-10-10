@@ -1,10 +1,11 @@
 import { getMovie } from "./apiMovie.js";
+import { getParams } from "../../utils/String.js"
 
 const atualUrl = document.URL
-let url = atualUrl.substring(37)
-console.log(url)
+// let url = atualUrl.substring(37)
+const { id } = getParams(atualUrl);
 
-const data = await getMovie(url)
+const data = await getMovie(id)
 
 console.log(data)
 
