@@ -142,8 +142,42 @@ main {
   background-color: white;
   width: 10px;
   border-radius: 5px;
+  display: none;
 }
 
+#gameCardsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#leftButtonSlider {
+  transform: translateX(-150%);
+}
+
+#rightButtonSlider {
+  transform: translateX(150%);
+  align-self: flex-end;
+}
+
+.sliderButtons {
+  color: white;
+  position: absolute;
+  top: 62%;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.sliderButtons:hover {
+  background-color: grey;
+}
+
+.gamesPostersRow {
+  transition: .5s;
+}
 
 /* Botões do Slider */
 

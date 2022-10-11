@@ -22,6 +22,9 @@ const discordUserForm = document.querySelector('#gameDiscord')
 const hourPerDayFromForm = document.querySelector('#hoursPerDayFrom')
 const hourPerDayToForm = document.querySelector('#hoursPerDayTo')
 
+const leftArrow = document.querySelector('#leftButtonSlider')
+const rightArrow = document.querySelector('#rightButtonSlider')
+
 publicarAnuncioBtn.addEventListener('click', () => {
   cleanForm()
 })
@@ -56,3 +59,27 @@ const cleanForm = function () {
   formularioBg.classList.toggle('enabled')
 }
 
+const container = document.querySelector('#testeContainer')
+const slider = document.querySelector('#gameCards')
+
+const slidersEl = document.getElementsByClassName('gamesPostersRow')
+
+let i = 0
+
+leftArrow.addEventListener('click', () => {
+  if (i < 0) {
+    i += 970
+    for (let el of slidersEl) {
+      el.style.transform = `translateX(${i}px)`
+    }
+  }
+})
+
+rightArrow.addEventListener('click', () => {
+  if (i > -2910) {
+    i -= 970
+    for (let el of slidersEl) {
+      el.style.transform = `translateX(${i}px)`
+    }
+  }
+})
