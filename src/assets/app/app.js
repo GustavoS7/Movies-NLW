@@ -1,10 +1,14 @@
 import { newData } from './api.js'
 import { buildSlider } from './buildSlider.js'
+import { buildList } from './buildList.js'
 const games = document.querySelector('#gameCards')
+
+const select = document.querySelector('#gameSelect')
 
 setTimeout(() => {
   console.log(newData)
   games.innerHTML = buildSlider(newData)
+  select.innerHTML = buildList(newData)
 }, 200)
 
 

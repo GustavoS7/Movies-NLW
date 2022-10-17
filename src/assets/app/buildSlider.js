@@ -13,7 +13,6 @@ const buildSlider = (array) => {
 
     buildMovies += movies
   }
-  console.log(buildMovies)
   return buildMovies
 }
 

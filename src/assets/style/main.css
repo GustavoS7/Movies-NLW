@@ -172,7 +172,8 @@ main {
 }
 
 .sliderButtons:hover {
-  background-color: grey;
+  background-color: #561B6A;
+  cursor: pointer;
 }
 
 .gamesPostersRow {

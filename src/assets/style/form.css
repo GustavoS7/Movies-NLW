@@ -86,7 +86,7 @@ form {
 .daysOfWeekForm {
   width: 40px;
   height: 40px;
-  background-color: #18181B;
+  background-color: #1E1E1E;
   color: white;
   border-radius: 4px;
   display: flex;
@@ -182,4 +182,8 @@ form select {
 
 #submitBtn:hover {
   background-color: #763bff;
+}
+
+input::placeholder {
+  color: white;
 }
